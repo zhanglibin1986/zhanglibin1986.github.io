@@ -351,7 +351,55 @@
       
         
           
-            <p>ites</p>
+            <p>Hexo是一个博客框架，利用node.js生成静态网站。然后配合github pages托管静态网站发布。</p>
+<h2 id="搭建Hexo步骤"><a href="#搭建Hexo步骤" class="headerlink" title="搭建Hexo步骤"></a>搭建Hexo步骤</h2><ol>
+<li>安装Git<br> <a href="https://git-scm.com/downloads" target="_blank" rel="external">https://git-scm.com/downloads</a></li>
+<li><p>安装Git和Node.js</p>
+<p> 安装 Node.js 的最佳方式是使用 nvm。<br> cURL:</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ curl https://raw.github.com/creationix/nvm/master/install.sh | sh</div></pre></td></tr></table></figure>
+<p> Wget:</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh</div></pre></td></tr></table></figure>
+<p> 安装完成后，重启终端并执行下列命令即可安装 Node.js。</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ nvm install stable</div></pre></td></tr></table></figure>
+</li>
+<li><p>安装 Hexo<br>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo-cli</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="Hexo-建立网站"><a href="#Hexo-建立网站" class="headerlink" title="Hexo 建立网站"></a>Hexo 建立网站</h2><p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">#当使用hexo的过程中难免会安装一些插件，如果中间出了奇怪的问题，比如博客白屏啥的，可以用这个命令从新init一个工作目录。把_config.yml和source文件夹和自己安装的其他主题拷贝过来即可。</div><div class="line">$ hexo init &lt;folder&gt;</div><div class="line">$ cd &lt;folder&gt;</div><div class="line">$ npm install</div></pre></td></tr></table></figure></p>
+<p>新建完成后，指定文件夹的目录如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">.</div><div class="line">├── _config.yml</div><div class="line">├── package.json</div><div class="line">├── scaffolds</div><div class="line">├── source</div><div class="line">|   ├── _drafts</div><div class="line">|   └── _posts</div><div class="line">└── themes</div></pre></td></tr></table></figure></p>
+<p>修改主目录下的_config.yml文件(theme文件夹下还有一个配置主题的_config.yml)：</p>
+<blockquote>
+<p>…<br>deploy:<br>  type: git<br>  repository: <a href="https://github.com/xxxxx/xxxxx.github.io.git" target="_blank" rel="external">https://github.com/xxxxx/xxxxx.github.io.git</a><br>  branch: master<br>…</p>
+</blockquote>
+<p>这样一个hexo + github的博客框架基本上就搭建完成了。</p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><ul>
+<li>写第一篇博客：<br>在主目录下执行<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo n[ew] [post] 第一篇博客</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>这样就在<code>source/_post/</code>目录下新建了一个名为“第一篇博客.md“文件。<br>用vim直接编辑即可。</p>
+<ul>
+<li>预览<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo s[erver]</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>执行上面的命令即可自动打开浏览器，看到预览效果。</p>
+<ul>
+<li><p>发布</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g[enerate]</div><div class="line">hexo d[eploy]</div></pre></td></tr></table></figure>
+</li>
+<li><p>写草稿</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo n[ew] draft 草稿1</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>即可在<code>source/_drafts/</code>目录下生成”草稿1.md“的文件</p>
+<ul>
+<li><p>预览草稿 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo s[erver] --drafts</div></pre></td></tr></table></figure>
+</li>
+<li><p>将草稿转成正式博文</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo publish 草稿1</div></pre></td></tr></table></figure>
+</li>
+</ul>
 
           
         
