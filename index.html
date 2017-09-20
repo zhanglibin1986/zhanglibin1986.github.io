@@ -97,13 +97,13 @@
 
 <meta name="description" content="记住，每天结束时，都应该在在这个世界留下些东西。请不要再虚度光阴。让每一分钟过的都有意义，每一件事都值得回忆。">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="天道酬勤">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="天道酬勤">
 <meta property="og:description" content="记住，每天结束时，都应该在在这个世界留下些东西。请不要再虚度光阴。让每一分钟过的都有意义，每一件事都值得回忆。">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="天道酬勤">
 <meta name="twitter:description" content="记住，每天结束时，都应该在在这个世界留下些东西。请不要再虚度光阴。让每一分钟过的都有意义，每一件事都值得回忆。">
 
 
@@ -140,7 +140,7 @@
 
 
 
-  <title>Hexo</title>
+  <title>天道酬勤</title>
   
 
 
@@ -171,12 +171,12 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">天道酬勤</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <p class="site-subtitle">逝者如斯夫</p>
       
   </div>
 
@@ -258,6 +258,248 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/20/vim缩写总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mr.Zhang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="天道酬勤">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/20/vim缩写总结/" itemprop="url">vim缩写总结</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-20T18:11:54+08:00">
+                2017-09-20
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-20T19:59:05+08:00">
+                2017-09-20
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <img src="/2017/09/20/vim缩写总结/vim-logo.jpeg" alt="vim" title="vim">
+<p>利用:ab[breviate]缩写命令，我们可以用一个缩写来代替一组字符，此后只要输入缩写，就可以自动插入其代表的字符串以提高输入效率。</p>
+<h3 id="设置缩写"><a href="#设置缩写" class="headerlink" title="设置缩写"></a>设置缩写</h3><p>使用以下命令，将定义ad来代替advertisement：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">:abbreviate ad advertisement</div></pre></td></tr></table></figure></p>
+<p>当想要输入advertisement时，只要输入ad，然后：</p>
+<pre><code>* 如果按下Ctrl-]键，可以输入advertisement并停留在插入模式；
+* 如果按下Esc键，将插入扩展字符并返回命令模式；
+* 如果按下Space或Enter键，那么将在插入扩展字符后，自动增加空格或回车，并停留在插入模式。
+</code></pre><h3 id="不同模式下的缩写"><a href="#不同模式下的缩写" class="headerlink" title="不同模式下的缩写"></a>不同模式下的缩写</h3><p>使用下表中不同形式的abbreviate命令，可以针对特定的模式设置缩写：</p>
+<table>
+<thead>
+<tr>
+<th>Command 命令</th>
+<th>Insert Only 插入模式</th>
+<th>Command Line 命令行模式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>:abbreviate</td>
+<td>y</td>
+<td>y</td>
+</tr>
+<tr>
+<td>:iabbrev</td>
+<td>y</td>
+<td></td>
+</tr>
+<tr>
+<td>:cabbrev</td>
+<td></td>
+<td>y</td>
+</tr>
+</tbody>
+</table>
+<h3 id="缩写实例"><a href="#缩写实例" class="headerlink" title="缩写实例"></a>缩写实例</h3><p>我们可以为多个单词设置缩写。例如以下命令，将设置Jack Berry的缩写为JB。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">:abbreviate AS Android Studio</div><div class="line"># 或者简写为:ab AS Android Studio</div></pre></td></tr></table></figure></p>
+<p>如果你编写程序，那么利用以下设置，可以加快添加注释的速度：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">:ab #b /**********************</div><div class="line"></div><div class="line">:ab #e **********************/</div></pre></td></tr></table></figure></p>
+<p>如果你设计网页，那么利用以下缩写可以快速增加标签。其中<cr><lf>将在标签间自动插入换行，以方便你继续输入内容。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">:iab p &lt;p&gt;&lt;CR&gt;&lt;LF&gt;&lt;/p&gt;</div></pre></td></tr></table></figure></lf></cr></p>
+<p>利用以下命令，我们甚至还可以定位光标所处的位置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">:iab icode &lt;code class=&quot;inset&quot;&gt;!cursor!&lt;/code&gt;&lt;Esc&gt;:call search(&apos;!cursor!&apos;,&apos;b&apos;)&lt;CR&gt;cf!</div></pre></td></tr></table></figure></p>
+<p>我们还可定义命令缩写。例如以下命令，将在新的标签页中显示帮助信息：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">#在命令行中执行`:h`回车即可</div><div class="line">:cabbrev h tab h</div></pre></td></tr></table></figure></p>
+<p>** 我们可以将常用的缩写命令定义在vimrc配置文件之中，它们将在Vim启动时自动装载，而不需要再逐一重新定义。</p>
+<h3 id="查看缩写"><a href="#查看缩写" class="headerlink" title="查看缩写"></a>查看缩写</h3><p>使用:abbreviate命令，将列出所有缩写定义，其中第一列显示缩写的类型：</p>
+<table>
+<thead>
+<tr>
+<th>标记</th>
+<th>模式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>!</td>
+<td>插入模式，命令行模式</td>
+</tr>
+<tr>
+<td>i</td>
+<td>插入模式</td>
+</tr>
+<tr>
+<td>c</td>
+<td>命令模式</td>
+</tr>
+</tbody>
+</table>
+<h3 id="取消缩写"><a href="#取消缩写" class="headerlink" title="取消缩写"></a>取消缩写</h3><p>可以使用以下命令，移除某个缩写：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">#或简写为:una ad，取消ad缩写</div><div class="line">:unabbreviate ad</div></pre></td></tr></table></figure></p>
+<p>针对不同模式下的缩写，需要使用与其相对应的unabbreviate命令。例如：使用:iunabbreviate命令，取消插入模式下的缩写，而:iabclear命令则会清除所有插入模式的缩写定义；依此类推，取消和清除命令行模式下的缩写，则需要使用:cunabbreviate和:cabclear命令。</p>
+<p>如果想要清除所有缩写，可以使用以下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">:abclear</div></pre></td></tr></table></figure></p>
+<p>命令小结</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>:abbreviate</td>
+<td>定义缩写</td>
+</tr>
+<tr>
+<td>:unabbreviate</td>
+<td>取消缩写</td>
+</tr>
+<tr>
+<td>:abclear</td>
+<td>清除所有缩写</td>
+</tr>
+</tbody>
+</table>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/19/Hexo机制和使用方法/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -267,7 +509,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="天道酬勤">
     </span>
 
     
@@ -295,7 +537,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-20T15:10:05+08:00">
+                2017-09-20
+              </time>
             
           </span>
 
@@ -400,6 +654,14 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo publish 草稿1</div></pre></td></tr></table></figure>
 </li>
 </ul>
+<h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><h3 id="让默认生成的博客名称带上创建时间"><a href="#让默认生成的博客名称带上创建时间" class="headerlink" title="让默认生成的博客名称带上创建时间"></a>让默认生成的博客名称带上创建时间</h3><p>这样做的目的是便于管理博客。查看源文件时一目了然。</p>
+<ul>
+<li>修改方法<br>编辑_config.yml文件：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">...</div><div class="line">new_post_name: :year-:month-:day-:title.md</div><div class="line">...</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="关联-GitHub-让-Hexo-支持查看文章更新历史"><a href="#关联-GitHub-让-Hexo-支持查看文章更新历史" class="headerlink" title="关联 GitHub, 让 Hexo 支持查看文章更新历史"></a>关联 GitHub, 让 Hexo 支持查看文章更新历史</h3><p>(引自：<a href="http://moxfive.xyz/2016/01/10/hexo-post-version-control/" target="_blank" rel="external">http://moxfive.xyz/2016/01/10/hexo-post-version-control/</a>)<br><img src="/2017/09/19/Hexo机制和使用方法/version-control.png" alt="图片转载" title="图片转载"></p>
+<h3 id="显示文章更新时间"><a href="#显示文章更新时间" class="headerlink" title="显示文章更新时间"></a>显示文章更新时间</h3><p>hexo配置不支持此项，一般是由主题来实现。比如可以修改next主题的配置文件_config.yml:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">...</div><div class="line">updated_at: true</div><div class="line">...</div></pre></td></tr></table></figure></p>
+<p>即可。</p>
 
           
         
@@ -457,7 +719,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="天道酬勤">
     </span>
 
     
@@ -485,7 +747,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-20T12:06:32+08:00">
+                2017-09-20
+              </time>
             
           </span>
 
@@ -550,12 +824,12 @@
 <blockquote>
 <p>将 config.yml 文件中的 post_asset_folder 选项设为 true</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">_config.yml</div><div class="line">post_asset_folder: true</div></pre></td></tr></table></figure>
-<p>Hexo将会在你每一次通过 hexo new [layout] &lt;title&gt; 命令创建新文章时自动创建一个文件夹。这个资源文件夹将会有与这个 markdown 文件一样的名字。将所有与你的文章有关的资源放在这个关联文件夹中之后，你可以通过相对路径来引用它们，这样你就得到了一个更简单而且方便得多的工作流。<br>这样引用上面图片的句法就变为：<code>![这是一张示例图片](hexo_github.png)，避免了使用path的繁琐。</code></p>
+<p>Hexo将会在你每一次通过 hexo new [layout] &lt;title&gt; 命令创建新文章时自动创建一个文件夹。这个资源文件夹将会有与这个 markdown 文件一样的名字。将所有与你的文章有关的资源放在这个关联文件夹中之后，你可以通过相对路径来引用它们，这样你就得到了一个更简单而且方便得多的工作流。<br>这样引用上面图片的句法就变为：<code>![这是一张示例图片](hexo_github.png)</code>，避免了使用path的繁琐。</p>
 </blockquote>
 </li>
 <li><p>相对路径引用的标签插件</p>
-{% asset_img hexo_github.png 这是第三种示例 %}
-<img src="/2017/09/18/hexo语法/hexo_github.png" alt="这是第三种示例" title="这是第三种示例">
+{% asset_img hexo-logo.png这是第三种示例 %}
+<img src="/2017/09/18/hexo语法/hexo-logo.png" alt="这是第三种示例" title="这是第三种示例">
 <p>以下是官网的描述：</p>
 <blockquote>
 <p>通过常规的 markdown 语法和相对路径来引用图片和其它资源可能会导致它们在存档页或者主页上显示不正确。在Hexo 2时代，社区创建了很多插件来解决这个问题。但是，随着Hexo 3 的发布，许多新的标签插件被加入到了核心代码中。这使得你可以更简单地在文章中引用你的资源。</p>
@@ -624,7 +898,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="天道酬勤">
     </span>
 
     
@@ -652,7 +926,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-19T15:43:33+08:00">
+                2017-09-19
+              </time>
             
           </span>
 
@@ -775,7 +1061,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="天道酬勤">
     </span>
 
     
@@ -803,7 +1089,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-20T19:45:11+08:00">
+                2017-09-20
+              </time>
             
           </span>
 
@@ -899,7 +1197,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="天道酬勤">
     </span>
 
     
@@ -927,7 +1225,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-20T10:55:17+08:00">
+                2017-09-20
+              </time>
             
           </span>
 
@@ -1045,7 +1355,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="天道酬勤">
     </span>
 
     
@@ -1073,7 +1383,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-19T15:43:33+08:00">
+                2017-09-19
+              </time>
             
           </span>
 
@@ -1188,7 +1510,7 @@
             
               <a href="/archives">
             
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1199,7 +1521,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -1210,7 +1532,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

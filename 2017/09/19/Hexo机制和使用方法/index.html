@@ -100,13 +100,15 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo机制和使用方法">
 <meta property="og:url" content="http://yoursite.com/2017/09/19/Hexo机制和使用方法/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="天道酬勤">
 <meta property="og:description" content="Hexo是一个博客框架，利用node.js生成静态网站。然后配合github pages托管静态网站发布。 搭建Hexo步骤 安装Git https://git-scm.com/downloads 安装Git和Node.js  安装 Node.js 的最佳方式是使用 nvm。 cURL:  1$ curl https://raw.github.com/creationix/nvm/master/i">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-19T12:19:47.000Z">
+<meta property="og:image" content="http://yoursite.com/2017/09/19/Hexo机制和使用方法/version-control.png">
+<meta property="og:updated_time" content="2017-09-20T07:10:05.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo机制和使用方法">
 <meta name="twitter:description" content="Hexo是一个博客框架，利用node.js生成静态网站。然后配合github pages托管静态网站发布。 搭建Hexo步骤 安装Git https://git-scm.com/downloads 安装Git和Node.js  安装 Node.js 的最佳方式是使用 nvm。 cURL:  1$ curl https://raw.github.com/creationix/nvm/master/i">
+<meta name="twitter:image" content="http://yoursite.com/2017/09/19/Hexo机制和使用方法/version-control.png">
 
 
 
@@ -142,7 +144,7 @@
 
 
 
-  <title>Hexo机制和使用方法 | Hexo</title>
+  <title>Hexo机制和使用方法 | 天道酬勤</title>
   
 
 
@@ -172,12 +174,12 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">天道酬勤</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <p class="site-subtitle">逝者如斯夫</p>
       
   </div>
 
@@ -268,7 +270,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="天道酬勤">
     </span>
 
     
@@ -294,7 +296,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-20T15:10:05+08:00">
+                2017-09-20
+              </time>
             
           </span>
 
@@ -397,6 +411,14 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo publish 草稿1</div></pre></td></tr></table></figure>
 </li>
 </ul>
+<h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><h3 id="让默认生成的博客名称带上创建时间"><a href="#让默认生成的博客名称带上创建时间" class="headerlink" title="让默认生成的博客名称带上创建时间"></a>让默认生成的博客名称带上创建时间</h3><p>这样做的目的是便于管理博客。查看源文件时一目了然。</p>
+<ul>
+<li>修改方法<br>编辑_config.yml文件：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">...</div><div class="line">new_post_name: :year-:month-:day-:title.md</div><div class="line">...</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="关联-GitHub-让-Hexo-支持查看文章更新历史"><a href="#关联-GitHub-让-Hexo-支持查看文章更新历史" class="headerlink" title="关联 GitHub, 让 Hexo 支持查看文章更新历史"></a>关联 GitHub, 让 Hexo 支持查看文章更新历史</h3><p>(引自：<a href="http://moxfive.xyz/2016/01/10/hexo-post-version-control/" target="_blank" rel="external">http://moxfive.xyz/2016/01/10/hexo-post-version-control/</a>)<br><img src="/2017/09/19/Hexo机制和使用方法/version-control.png" alt="图片转载" title="图片转载"></p>
+<h3 id="显示文章更新时间"><a href="#显示文章更新时间" class="headerlink" title="显示文章更新时间"></a>显示文章更新时间</h3><p>hexo配置不支持此项，一般是由主题来实现。比如可以修改next主题的配置文件_config.yml:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">...</div><div class="line">updated_at: true</div><div class="line">...</div></pre></td></tr></table></figure></p>
+<p>即可。</p>
 
       
     </div>
@@ -436,6 +458,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/09/20/vim缩写总结/" rel="prev" title="vim缩写总结">
+                vim缩写总结 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -511,7 +537,7 @@
             
               <a href="/archives">
             
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -522,7 +548,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -533,7 +559,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -568,7 +594,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建Hexo步骤"><span class="nav-number">1.</span> <span class="nav-text">搭建Hexo步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-建立网站"><span class="nav-number">2.</span> <span class="nav-text">Hexo 建立网站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用"><span class="nav-number">3.</span> <span class="nav-text">使用</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建Hexo步骤"><span class="nav-number">1.</span> <span class="nav-text">搭建Hexo步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-建立网站"><span class="nav-number">2.</span> <span class="nav-text">Hexo 建立网站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用"><span class="nav-number">3.</span> <span class="nav-text">使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最佳实践"><span class="nav-number">4.</span> <span class="nav-text">最佳实践</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#让默认生成的博客名称带上创建时间"><span class="nav-number">4.1.</span> <span class="nav-text">让默认生成的博客名称带上创建时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关联-GitHub-让-Hexo-支持查看文章更新历史"><span class="nav-number">4.2.</span> <span class="nav-text">关联 GitHub, 让 Hexo 支持查看文章更新历史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#显示文章更新时间"><span class="nav-number">4.3.</span> <span class="nav-text">显示文章更新时间</span></a></li></ol></li></ol></div>
             
 
           </div>
