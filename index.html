@@ -305,7 +305,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-09-22T11:54:49+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-22T16:42:23+08:00">
                 2017-09-22
               </time>
             
@@ -362,45 +362,15 @@
 
       
         
-          
-            <h1 id="使用百度站长平台"><a href="#使用百度站长平台" class="headerlink" title="使用百度站长平台"></a>使用百度站长平台</h1><p>站长平台包含很多实用的站长工具，方便站长对平台进行更好的监控和管理。比如seo优化，站长统计等等。</p>
-<h2 id="SEO"><a href="#SEO" class="headerlink" title="SEO"></a>SEO</h2><p>Seo优化是为了让你的博客在google和百度搜索能够被搜索到。<br>google seo官网：<a href="https://www.google.com/webmasters/" target="_blank" rel="external">https://www.google.com/webmasters/</a><br>百度站长平台：<a href="http://zhanzhang.baidu.com/dashboard/index" target="_blank" rel="external">http://zhanzhang.baidu.com/dashboard/index</a></p>
-<h3 id="添加百度和google的站点地图"><a href="#添加百度和google的站点地图" class="headerlink" title="添加百度和google的站点地图"></a>添加百度和google的站点地图</h3><blockquote>
-<ul>
-<li>什么是Sitemap<br>Sitemap（即站点地图）就是您网站上各网页的列表。创建并提交Sitemap有助于百度发现并了解您网站上的所有网页。您还可以使用Sitemap提供有关您网站的其他信息，如上次更新日期、Sitemap文件的更新频率等，供百度Spider参考。<br>百度对已提交的数据，不保证一定会抓取及索引所有网址。但是，我们会使用Sitemap中的数据来了解网站的结构等信息，这样可以帮助我们改进抓取策略，并在日后能更好地对网站进行抓取。<br>此外，Sitemap 与搜索排名没有关系。 </li>
-</ul>
-</blockquote>
-<ol>
-<li><p>安装sitemap站点地图自动生成插件<br>在博客根目录执行：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install hexo-generator-sitemap --save</div><div class="line">npm install hexo-generator-baidu-sitemap --save</div></pre></td></tr></table></figure>
-</li>
-<li><p>在站点或主题配置文件中添加以下配置：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"> sitemap: </div><div class="line">  path: sitemap.xml</div><div class="line">baidusitemap:</div><div class="line">  path: baidusitemap.xml</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>修改站点配置文件中的url配置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">url:你博客网址的域名 #比如https://zhangsan.github.io</div></pre></td></tr></table></figure></p>
-<ol>
-<li>执行hexo g会再public文件夹生成两个site文件：baidusitemap.xml和sitemap.xml，第一个提交给百度，第二个提交给google。</li>
-</ol>
-<p>百度提交：<br>站长平台 -&gt; 工具 -&gt; 网页抓取 -&gt; 链接提交 </p>
-<h3 id="根据个人需求创建robots"><a href="#根据个人需求创建robots" class="headerlink" title="根据个人需求创建robots"></a>根据个人需求创建robots</h3><p>以下是百度站长平台对robots的说明：</p>
-<blockquote>
-<ul>
-<li>什么是robots文件<br>robots是站点与spider沟通的重要渠道，站点通过robots文件声明该网站中不想被搜索引擎收录的部分或者指定搜索引擎只收录特定的部分。请注意，仅当您的网站包含不希望被搜索引擎收录的内容时，才需要使用robots.txt文件。如果您希望搜索引擎收录网站上所有内容，请勿建立robots.txt文件。为了避免站长在设置robots文件时出现，百度站长平台特别推出了robots工具，帮助站长正确设置robots。</li>
-<li>使用说明<br>1、robots.txt可以告诉百度您网站的哪些页面可以被抓取，哪些页面不可以被抓取。<br>2、您可以通过Robots工具来创建、校验、更新您的robots.txt文件，或查看您网站robots.txt文件在百度生效的情况。<br>3、Robots工具目前支持48k的文件内容检测，请保证您的robots.txt文件不要过大，目录最长不超过250个字符。</li>
-</ul>
-</blockquote>
-<p>详细使用方法，请参考百度站长平台：<a href="http://zhanzhang.baidu.com/college/courseinfo?id=267&amp;page=12#h2_article_title30" target="_blank" rel="external">http://zhanzhang.baidu.com/college/courseinfo?id=267&amp;page=12#h2_article_title30</a></p>
-<h1 id="Google-seo"><a href="#Google-seo" class="headerlink" title="Google seo"></a>Google seo</h1><ol>
-<li><p>在Google Search Console注册自己的站点：<a href="https://www.google.com/webmasters/" target="_blank" rel="external">https://www.google.com/webmasters/</a></p>
-</li>
-<li><p>提交站点地图sitemap。</p>
-</li>
-<li><p>使用Google 抓取工具实时抓取一批网址。这个相当于不等待google主动抓取sitemap。</p>
-</li>
-</ol>
-
-          
+          <h1 id="使用百度站长平台"><a href="#使用百度站长平台" class="headerlink" title="使用百度站长平台"></a>使用百度站长平台</h1><p>站长平台包含很多实用的站长工具，方便站长对平台进行更好的监控和管理。比如seo优化，站长统计等等。</p>
+<h2 id="SEO"><a href="#SEO" class="headerlink" title="SEO"></a>SEO</h2><p>Seo优化是为了让你的博客在google和百度搜索能够被搜索到。<br>google seo官网：<a href="https://www.google.com/webmasters/" target="_blank" rel="external">https://www.google.com/webmasters/</a><br>百度站长平台：<a href="http://zhanzhang.baidu.com/dashboard/index" target="_blank" rel="external">http://zhanzhang.baidu.com/dashboard/index</a><br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/22/建站日志/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -890,8 +860,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-09-22T11:02:29+08:00">
-                2017-09-22
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-24T08:23:25+08:00">
+                2017-09-24
               </time>
             
           </span>
@@ -1006,7 +976,7 @@
 <h3 id="显示文章更新时间"><a href="#显示文章更新时间" class="headerlink" title="显示文章更新时间"></a>显示文章更新时间</h3><p>hexo配置不支持此项，一般是由主题来实现。比如可以修改next主题的配置文件_config.yml:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">...</div><div class="line">updated_at: true</div><div class="line">...</div></pre></td></tr></table></figure></p>
 <p>即可。</p>
 <h3 id="修改默认的博客模板，比如添加分类等等。"><a href="#修改默认的博客模板，比如添加分类等等。" class="headerlink" title="修改默认的博客模板，比如添加分类等等。"></a>修改默认的博客模板，比如添加分类等等。</h3><p>修改scaffolds/post.md这个文件即可。</p>
-
+<h3 id="添加评论功能"><a href="#添加评论功能" class="headerlink" title="添加评论功能"></a>添加评论功能</h3>
           
         
       
@@ -1443,8 +1413,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-09-21T20:15:27+08:00">
-                2017-09-21
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-22T18:41:23+08:00">
+                2017-09-22
               </time>
             
           </span>
@@ -1579,8 +1549,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-09-21T10:37:01+08:00">
-                2017-09-21
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-24T08:24:15+08:00">
+                2017-09-24
               </time>
             
           </span>
