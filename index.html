@@ -1413,8 +1413,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-09-22T18:41:23+08:00">
-                2017-09-22
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-25T16:50:32+08:00">
+                2017-09-25
               </time>
             
           </span>
@@ -1549,8 +1549,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-09-24T08:24:15+08:00">
-                2017-09-24
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-25T12:00:36+08:00">
+                2017-09-25
               </time>
             
           </span>
@@ -1885,7 +1885,22 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
+        <div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '页面 ID', // 可选。默认为 location.href
+  owner: '你的 GitHub ID',
+  repo: '存储评论的 repo',
+  oauth: {
+    client_id: '你的 client ID',
+    client_secret: '你的 client secret',
+  },
+})
+gitment.render('container')
+</script>
+<div class="copyright" >
   
   &copy; 
   <span itemprop="copyrightYear">2017</span>
