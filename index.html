@@ -305,8 +305,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-09-22T16:42:23+08:00">
-                2017-09-22
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-26T11:23:20+08:00">
+                2017-09-26
               </time>
             
           </span>
@@ -860,8 +860,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-09-24T08:23:25+08:00">
-                2017-09-24
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-26T11:53:44+08:00">
+                2017-09-26
               </time>
             
           </span>
@@ -976,7 +976,13 @@
 <h3 id="显示文章更新时间"><a href="#显示文章更新时间" class="headerlink" title="显示文章更新时间"></a>显示文章更新时间</h3><p>hexo配置不支持此项，一般是由主题来实现。比如可以修改next主题的配置文件_config.yml:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">...</div><div class="line">updated_at: true</div><div class="line">...</div></pre></td></tr></table></figure></p>
 <p>即可。</p>
 <h3 id="修改默认的博客模板，比如添加分类等等。"><a href="#修改默认的博客模板，比如添加分类等等。" class="headerlink" title="修改默认的博客模板，比如添加分类等等。"></a>修改默认的博客模板，比如添加分类等等。</h3><p>修改scaffolds/post.md这个文件即可。</p>
-<h3 id="添加评论功能"><a href="#添加评论功能" class="headerlink" title="添加评论功能"></a>添加评论功能</h3>
+<h3 id="添加评论功能"><a href="#添加评论功能" class="headerlink" title="添加评论功能"></a>添加评论功能</h3><p>好评如潮的多说在17年3月21日宣布关闭项目。6月1日正式关停服务。<br>然后搜索一下可替代方案，发现了一个网友开发的基于github issue的评论系统：<a href="https://imsun.net/posts/gitment-introduction/" target="_blank" rel="external">Gitment</a><br>以下内容引自原作者博客，红色部分是个人评论或说明。</p>
+<blockquote>
+<h3 id="1-注册-OAuth-Application"><a href="#1-注册-OAuth-Application" class="headerlink" title="1. 注册 OAuth Application"></a>1. 注册 OAuth Application</h3><p><a href="https://github.com/settings/applications/new" target="_blank" rel="external">点击此处</a>来注册一个新的 OAuth Application。其他内容可以随意填写，但要确保填入正确的 callback URL（一般是评论页面对应的域名，如 <a href="https://imsun.net)。" target="_blank" rel="external">https://imsun.net)。</a> <font color="red"> callback url 是指登录完成后去跳转的页面的域名,当然是返回我们的博客页面的域名</font><br>你会得到一个 client ID 和一个 client secret，这个将被用于之后的用户登录。</p>
+<h3 id="2-引入-Gitment"><a href="#2-引入-Gitment" class="headerlink" title="2. 引入 Gitment"></a>2. 引入 Gitment</h3><p>将下面的代码添加到你的页面：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"> &lt;div id=&quot;container&quot;&gt;&lt;/div&gt;</div><div class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://imsun.github.io/gitment/style/default.css&quot;&gt;</div><div class="line">&lt;script src=&quot;https://imsun.github.io/gitment/dist/gitment.browser.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;script&gt;</div><div class="line">var gitment = new Gitment(&#123;</div><div class="line">  id: &apos;页面 ID&apos;, // 可选。默认为 location.href</div><div class="line">  owner: &apos;你的 GitHub ID&apos;,</div><div class="line">  repo: &apos;存储评论的 repo&apos;, </div><div class="line">  oauth: &#123;</div><div class="line">    client_id: &apos;你的 client ID&apos;,</div><div class="line">    client_secret: &apos;你的 client secret&apos;,</div><div class="line">  &#125;,</div><div class="line">&#125;)</div><div class="line">gitment.render(&apos;container&apos;)</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+</blockquote>
+<p><code>repo: &#39;存储评论的 repo&#39;</code>这一步需要先在你的github新建一个仓库。<br>我使用的是next主题，所以把这段代码加到了<code>themes/next/layout/_partials/footer.swig</code>文件开头部分。<br>此时发布博客后就可以在文章的末尾看到评论的模块了。不过需要注意的是每篇文章都需要你手动先初始化评论，评论系统才可用，也可以理解为新建文章的评论系统默认是关闭的。<br><img src="/2017/09/19/Hexo机制和使用方法/before_init.png" alt="初始化前" title="初始化前"></p>
+
           
         
       
@@ -1071,8 +1077,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-09-20T12:06:32+08:00">
-                2017-09-20
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-26T11:47:43+08:00">
+                2017-09-26
               </time>
             
           </span>
@@ -1413,8 +1419,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-09-25T16:50:32+08:00">
-                2017-09-25
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-26T12:03:29+08:00">
+                2017-09-26
               </time>
             
           </span>
@@ -1549,8 +1555,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-09-25T12:00:36+08:00">
-                2017-09-25
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-26T10:24:48+08:00">
+                2017-09-26
               </time>
             
           </span>

@@ -104,7 +104,8 @@
 <meta property="og:description" content="Hexo是一个博客框架，利用node.js生成静态网站。然后配合github pages托管静态网站发布。 搭建Hexo步骤 安装Git https://git-scm.com/downloads 安装Git和Node.js  安装 Node.js 的最佳方式是使用 nvm。 cURL:  1$ curl https://raw.github.com/creationix/nvm/master/i">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://zhanglibin1986.github.io/2017/09/19/Hexo机制和使用方法/version-control.png">
-<meta property="og:updated_time" content="2017-09-24T00:23:25.000Z">
+<meta property="og:image" content="https://zhanglibin1986.github.io/2017/09/19/Hexo机制和使用方法/before_init.png">
+<meta property="og:updated_time" content="2017-09-26T03:53:44.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo机制和使用方法">
 <meta name="twitter:description" content="Hexo是一个博客框架，利用node.js生成静态网站。然后配合github pages托管静态网站发布。 搭建Hexo步骤 安装Git https://git-scm.com/downloads 安装Git和Node.js  安装 Node.js 的最佳方式是使用 nvm。 cURL:  1$ curl https://raw.github.com/creationix/nvm/master/i">
@@ -306,8 +307,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-09-24T08:23:25+08:00">
-                2017-09-24
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-26T11:53:44+08:00">
+                2017-09-26
               </time>
             
           </span>
@@ -420,7 +421,13 @@
 <h3 id="显示文章更新时间"><a href="#显示文章更新时间" class="headerlink" title="显示文章更新时间"></a>显示文章更新时间</h3><p>hexo配置不支持此项，一般是由主题来实现。比如可以修改next主题的配置文件_config.yml:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">...</div><div class="line">updated_at: true</div><div class="line">...</div></pre></td></tr></table></figure></p>
 <p>即可。</p>
 <h3 id="修改默认的博客模板，比如添加分类等等。"><a href="#修改默认的博客模板，比如添加分类等等。" class="headerlink" title="修改默认的博客模板，比如添加分类等等。"></a>修改默认的博客模板，比如添加分类等等。</h3><p>修改scaffolds/post.md这个文件即可。</p>
-<h3 id="添加评论功能"><a href="#添加评论功能" class="headerlink" title="添加评论功能"></a>添加评论功能</h3>
+<h3 id="添加评论功能"><a href="#添加评论功能" class="headerlink" title="添加评论功能"></a>添加评论功能</h3><p>好评如潮的多说在17年3月21日宣布关闭项目。6月1日正式关停服务。<br>然后搜索一下可替代方案，发现了一个网友开发的基于github issue的评论系统：<a href="https://imsun.net/posts/gitment-introduction/" target="_blank" rel="external">Gitment</a><br>以下内容引自原作者博客，红色部分是个人评论或说明。</p>
+<blockquote>
+<h3 id="1-注册-OAuth-Application"><a href="#1-注册-OAuth-Application" class="headerlink" title="1. 注册 OAuth Application"></a>1. 注册 OAuth Application</h3><p><a href="https://github.com/settings/applications/new" target="_blank" rel="external">点击此处</a>来注册一个新的 OAuth Application。其他内容可以随意填写，但要确保填入正确的 callback URL（一般是评论页面对应的域名，如 <a href="https://imsun.net)。" target="_blank" rel="external">https://imsun.net)。</a> <font color="red"> callback url 是指登录完成后去跳转的页面的域名,当然是返回我们的博客页面的域名</font><br>你会得到一个 client ID 和一个 client secret，这个将被用于之后的用户登录。</p>
+<h3 id="2-引入-Gitment"><a href="#2-引入-Gitment" class="headerlink" title="2. 引入 Gitment"></a>2. 引入 Gitment</h3><p>将下面的代码添加到你的页面：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"> &lt;div id=&quot;container&quot;&gt;&lt;/div&gt;</div><div class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://imsun.github.io/gitment/style/default.css&quot;&gt;</div><div class="line">&lt;script src=&quot;https://imsun.github.io/gitment/dist/gitment.browser.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;script&gt;</div><div class="line">var gitment = new Gitment(&#123;</div><div class="line">  id: &apos;页面 ID&apos;, // 可选。默认为 location.href</div><div class="line">  owner: &apos;你的 GitHub ID&apos;,</div><div class="line">  repo: &apos;存储评论的 repo&apos;, </div><div class="line">  oauth: &#123;</div><div class="line">    client_id: &apos;你的 client ID&apos;,</div><div class="line">    client_secret: &apos;你的 client secret&apos;,</div><div class="line">  &#125;,</div><div class="line">&#125;)</div><div class="line">gitment.render(&apos;container&apos;)</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+</blockquote>
+<p><code>repo: &#39;存储评论的 repo&#39;</code>这一步需要先在你的github新建一个仓库。<br>我使用的是next主题，所以把这段代码加到了<code>themes/next/layout/_partials/footer.swig</code>文件开头部分。<br>此时发布博客后就可以在文章的末尾看到评论的模块了。不过需要注意的是每篇文章都需要你手动先初始化评论，评论系统才可用，也可以理解为新建文章的评论系统默认是关闭的。<br><img src="/2017/09/19/Hexo机制和使用方法/before_init.png" alt="初始化前" title="初始化前"></p>
+
       
     </div>
     
@@ -595,7 +602,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建Hexo步骤"><span class="nav-number">1.</span> <span class="nav-text">搭建Hexo步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-建立网站"><span class="nav-number">2.</span> <span class="nav-text">Hexo 建立网站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用"><span class="nav-number">3.</span> <span class="nav-text">使用</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#最佳实践"><span class="nav-number"></span> <span class="nav-text">最佳实践</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#让默认生成的博客名称带上创建时间"><span class="nav-number">0.1.</span> <span class="nav-text">让默认生成的博客名称带上创建时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关联-GitHub-让-Hexo-支持查看文章更新历史"><span class="nav-number">0.2.</span> <span class="nav-text">关联 GitHub, 让 Hexo 支持查看文章更新历史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#显示文章更新时间"><span class="nav-number">0.3.</span> <span class="nav-text">显示文章更新时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改默认的博客模板，比如添加分类等等。"><span class="nav-number">0.4.</span> <span class="nav-text">修改默认的博客模板，比如添加分类等等。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加评论功能"><span class="nav-number">0.5.</span> <span class="nav-text">添加评论功能</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建Hexo步骤"><span class="nav-number">1.</span> <span class="nav-text">搭建Hexo步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-建立网站"><span class="nav-number">2.</span> <span class="nav-text">Hexo 建立网站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用"><span class="nav-number">3.</span> <span class="nav-text">使用</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#最佳实践"><span class="nav-number"></span> <span class="nav-text">最佳实践</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#让默认生成的博客名称带上创建时间"><span class="nav-number">0.1.</span> <span class="nav-text">让默认生成的博客名称带上创建时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关联-GitHub-让-Hexo-支持查看文章更新历史"><span class="nav-number">0.2.</span> <span class="nav-text">关联 GitHub, 让 Hexo 支持查看文章更新历史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#显示文章更新时间"><span class="nav-number">0.3.</span> <span class="nav-text">显示文章更新时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改默认的博客模板，比如添加分类等等。"><span class="nav-number">0.4.</span> <span class="nav-text">修改默认的博客模板，比如添加分类等等。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加评论功能"><span class="nav-number">0.5.</span> <span class="nav-text">添加评论功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-注册-OAuth-Application"><span class="nav-number">0.6.</span> <span class="nav-text">1. 注册 OAuth Application</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-引入-Gitment"><span class="nav-number">0.7.</span> <span class="nav-text">2. 引入 Gitment</span></a></li></ol></li></ol></div>
             
 
           </div>
