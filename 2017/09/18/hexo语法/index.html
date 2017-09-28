@@ -95,21 +95,21 @@
 
 
 
-<meta name="description" content="这一行居中显示 人的一切痛苦，本质是都是对自己的无能的愤怒。王小波">
+<meta name="description" content="文本居中这一行居中显示测试居中">
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo语法">
 <meta property="og:url" content="https://zhanglibin1986.github.io/2017/09/18/hexo语法/index.html">
 <meta property="og:site_name" content="天道酬勤">
-<meta property="og:description" content="这一行居中显示 人的一切痛苦，本质是都是对自己的无能的愤怒。王小波">
+<meta property="og:description" content="文本居中这一行居中显示测试居中">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://zhanglibin1986.github.io/2017/09/18/hexo语法/images/hexo_github.png">
 <meta property="og:image" content="https://zhanglibin1986.github.io/2017/09/18/hexo语法/hexo-logo.png">
 <meta property="og:image" content="https://camo.githubusercontent.com/14b97ba4a1327c0db2200f3892788fd873a1ce20/687474703a2f2f626c6f672e70687573696f6e2e6e6c2f77702d636f6e74656e742f75706c6f6164732f323031332f31312f646f636b65722e706e67">
-<meta property="og:updated_time" content="2017-09-26T12:44:45.000Z">
+<meta property="og:updated_time" content="2017-09-28T09:28:49.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo语法">
-<meta name="twitter:description" content="这一行居中显示 人的一切痛苦，本质是都是对自己的无能的愤怒。王小波">
+<meta name="twitter:description" content="文本居中这一行居中显示测试居中">
 <meta name="twitter:image" content="https://zhanglibin1986.github.io/2017/09/18/hexo语法/images/hexo_github.png">
 
 
@@ -308,8 +308,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-09-26T20:44:45+08:00">
-                2017-09-26
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-28T17:28:49+08:00">
+                2017-09-28
               </time>
             
           </span>
@@ -364,8 +364,31 @@
       
 
       
-        <p><center>这一行居中显示</center></p>
-<p><blockquote class="blockquote-center">人的一切痛苦，本质是都是对自己的无能的愤怒。<br>王小波<br></blockquote><br><a id="more"></a></p>
+        <h1 id="文本居中"><a href="#文本居中" class="headerlink" title="文本居中"></a>文本居中</h1><p><center>这一行居中显示<br>测试居中<br></center><br><a id="more"></a></p>
+<ul>
+<li><p>文字引用<br>&lt;%blockquote%&gt; 人的一切痛苦，本质是都是对自己的无能的愤怒。&lt;%endblockquote%&gt;</p>
+</li>
+<li><p>文字引用居中</p>
+<blockquote class="blockquote-center">人的一切痛苦，本质是都是对自己的无能的愤怒。<br>王小波<br></blockquote>
+</li>
+<li><p>文字引用居中</p>
+<blockquote class="blockquote-center"><p>人的一切痛苦，本质是都是对自己的无能的愤怒。<br>王小波</p>
+</blockquote>
+</li>
+<li><p>文字引用居中</p>
+<blockquote class="blockquote-center"><p>人的一切痛苦，本质是都是对自己的无能的愤怒。<br>王小波</p>
+</blockquote>
+</li>
+<li><p>书籍引用</p>
+<blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
+<footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote>
+</li>
+<li><p>网页文字引用</p>
+<blockquote><p>Every interaction is both precious and an opportunity to delight.</p>
+<footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html" target="_blank" rel="external">Welcome to Island Marketing</a></cite></footer></blockquote>
+</li>
+</ul>
+<!-- more -->
 <h1 id="插入图片的方式总结"><a href="#插入图片的方式总结" class="headerlink" title="插入图片的方式总结"></a>插入图片的方式总结</h1><ol>
 <li>最简单的方法就是放在 source/images 文件夹中。然后通过类似于 ![](/images/image.jpg) 的方法访问它们。<br><code>![这是一张示例图片](images/hexo_github.png)</code><br><img src="images/hexo_github.png" alt="这是一张示例图片"></li>
 <li><p>修改配置文件，给每一篇文章生成一个资源目录</p>
@@ -391,6 +414,7 @@
 <li>插入网络图片</li>
 </ol>
 <p><code>![docker](https://camo.githubusercontent.com/14b97ba4a1327c0db2200f3892788fd873a1ce20/687474703a2f2f626c6f672e70687573696f6e2e6e6c2f|~77702d636f6e74656e742f75706c6f6164732f323031332f31312f646f636b65722e706e67)</code><br><img src="https://camo.githubusercontent.com/14b97ba4a1327c0db2200f3892788fd873a1ce20/687474703a2f2f626c6f672e70687573696f6e2e6e6c2f77702d636f6e74656e742f75706c6f6164732f323031332f31312f646f636b65722e706e67" alt="docker"></p>
+<p>参考：<br><a href="http://theme-next.iissnan.com/tag-plugins.html" target="_blank" rel="external">http://theme-next.iissnan.com/tag-plugins.html</a><br><a href="https://hexo.io/zh-cn/docs/tag-plugins.html" target="_blank" rel="external">https://hexo.io/zh-cn/docs/tag-plugins.html</a></p>
 
       
     </div>
@@ -531,7 +555,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -566,7 +590,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#插入图片的方式总结"><span class="nav-number">1.</span> <span class="nav-text">插入图片的方式总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#文本居中"><span class="nav-number">1.</span> <span class="nav-text">文本居中</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#插入图片的方式总结"><span class="nav-number">2.</span> <span class="nav-text">插入图片的方式总结</span></a></li></ol></div>
             
 
           </div>
