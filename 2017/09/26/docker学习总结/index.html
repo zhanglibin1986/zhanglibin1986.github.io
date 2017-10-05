@@ -95,19 +95,19 @@
 
 
 
-<meta name="description" content="Docker 使用 Google 公司推出的 Go 语言 进行开发实现，基于 Linux 内核的 cgroup，namespace，以及 AUFS 类的 Union FS 等技术，对进程进行封装隔离，属于 操作系统层面的虚拟化技术。由于隔离的进程独立于宿主和其它的隔离的进程，因此也称其为容器。  引自：https://yeasy.gitbooks.io/docker_practice/conte">
+<meta name="description" content="Docker 使用 Google 公司推出的 Go 语言 进行开发实现，基于 Linux 内核的 cgroup，namespace，以及 AUFS 类的 Union FS 等技术，对进程进行封装隔离，属于 操作系统层面的虚拟化技术。由于隔离的进程独立于宿主和其它的隔离的进程，因此也称其为容器。">
 <meta name="keywords" content="docker">
 <meta property="og:type" content="article">
 <meta property="og:title" content="docker学习总结">
 <meta property="og:url" content="https://zhanglibin1986.github.io/2017/09/26/docker学习总结/index.html">
 <meta property="og:site_name" content="天道酬勤">
-<meta property="og:description" content="Docker 使用 Google 公司推出的 Go 语言 进行开发实现，基于 Linux 内核的 cgroup，namespace，以及 AUFS 类的 Union FS 等技术，对进程进行封装隔离，属于 操作系统层面的虚拟化技术。由于隔离的进程独立于宿主和其它的隔离的进程，因此也称其为容器。  引自：https://yeasy.gitbooks.io/docker_practice/conte">
+<meta property="og:description" content="Docker 使用 Google 公司推出的 Go 语言 进行开发实现，基于 Linux 内核的 cgroup，namespace，以及 AUFS 类的 Union FS 等技术，对进程进行封装隔离，属于 操作系统层面的虚拟化技术。由于隔离的进程独立于宿主和其它的隔离的进程，因此也称其为容器。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://camo.githubusercontent.com/14b97ba4a1327c0db2200f3892788fd873a1ce20/687474703a2f2f626c6f672e70687573696f6e2e6e6c2f77702d636f6e74656e742f75706c6f6164732f323031332f31312f646f636b65722e706e67">
-<meta property="og:updated_time" content="2017-09-30T11:02:46.000Z">
+<meta property="og:updated_time" content="2017-10-01T08:45:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="docker学习总结">
-<meta name="twitter:description" content="Docker 使用 Google 公司推出的 Go 语言 进行开发实现，基于 Linux 内核的 cgroup，namespace，以及 AUFS 类的 Union FS 等技术，对进程进行封装隔离，属于 操作系统层面的虚拟化技术。由于隔离的进程独立于宿主和其它的隔离的进程，因此也称其为容器。  引自：https://yeasy.gitbooks.io/docker_practice/conte">
+<meta name="twitter:description" content="Docker 使用 Google 公司推出的 Go 语言 进行开发实现，基于 Linux 内核的 cgroup，namespace，以及 AUFS 类的 Union FS 等技术，对进程进行封装隔离，属于 操作系统层面的虚拟化技术。由于隔离的进程独立于宿主和其它的隔离的进程，因此也称其为容器。">
 <meta name="twitter:image" content="https://camo.githubusercontent.com/14b97ba4a1327c0db2200f3892788fd873a1ce20/687474703a2f2f626c6f672e70687573696f6e2e6e6c2f77702d636f6e74656e742f75706c6f6164732f323031332f31312f646f636b65722e706e67">
 
 
@@ -306,8 +306,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-09-30T19:02:46+08:00">
-                2017-09-30
+              <time title="更新于" itemprop="dateModified" datetime="2017-10-01T16:45:14+08:00">
+                2017-10-01
               </time>
             
           </span>
@@ -365,7 +365,9 @@
         <blockquote>
 <p>Docker 使用 Google 公司推出的 <a href="https://golang.org/" target="_blank" rel="external">Go 语言</a> 进行开发实现，基于 Linux 内核的 <a href="https://zh.wikipedia.org/wiki/Cgroups" target="_blank" rel="external">cgroup</a>，<a href="https://en.wikipedia.org/wiki/Linux_namespaces" target="_blank" rel="external">namespace</a>，以及 <a href="https://en.wikipedia.org/wiki/Aufs" target="_blank" rel="external">AUFS</a> 类的 <a href="https://en.wikipedia.org/wiki/Union_mount" target="_blank" rel="external">Union FS</a> 等技术，对进程进行封装隔离，属于 操作系统层面的虚拟化技术。由于隔离的进程独立于宿主和其它的隔离的进程，因此也称其为容器。</p>
 </blockquote>
-<p>引自：<a href="https://yeasy.gitbooks.io/docker_practice/content/introduction/what.html" target="_blank" rel="external">https://yeasy.gitbooks.io/docker_practice/content/introduction/what.html</a><br><img src="https://camo.githubusercontent.com/14b97ba4a1327c0db2200f3892788fd873a1ce20/687474703a2f2f626c6f672e70687573696f6e2e6e6c2f77702d636f6e74656e742f75706c6f6164732f323031332f31312f646f636b65722e706e67" alt=""><br><a id="more"></a><br>本文内容大部分是来源于<a href="https://yeasy.gitbooks.io/docker_practice/content/" target="_blank" rel="external">Docker — 从入门到实践</a>，并且添加了部分自己的理解。算是读书总结和笔记吧。</p>
+<a id="more"></a>
+<p>引自：<a href="https://yeasy.gitbooks.io/docker_practice/content/introduction/what.html" target="_blank" rel="external">https://yeasy.gitbooks.io/docker_practice/content/introduction/what.html</a><br><img src="https://camo.githubusercontent.com/14b97ba4a1327c0db2200f3892788fd873a1ce20/687474703a2f2f626c6f672e70687573696f6e2e6e6c2f77702d636f6e74656e742f75706c6f6164732f323031332f31312f646f636b65722e706e67" alt=""></p>
+<p>本文内容大部分是来源于<a href="https://yeasy.gitbooks.io/docker_practice/content/" target="_blank" rel="external">Docker — 从入门到实践</a>，并且添加了部分自己的理解。算是读书总结和笔记吧。</p>
 <p>现在的Docker，人们对他可谓是推崇备至，评价极高。传统的虚拟机技术被取代的趋势已很明显。再加上其开源免费，受到大量开发者的追捧，Docker 项目后来还加入了 Linux 基金会，并成立推动 <a href="https://www.opencontainers.org/" target="_blank" rel="external">开放容器联盟</a>。<br>其实docker出身于法国某公司的一个内部项目。开源以后就在github上进行维护。之后渐渐受到越来越广泛的关注。他在2013年才改名为docker。</p>
 <p>Docker 使用 Google 公司推出的 <a href="https://golang.org/" target="_blank" rel="external">Go 语言</a> 进行开发实现，基于 Linux 内核的 <a href="https://zh.wikipedia.org/wiki/Cgroups" target="_blank" rel="external">cgroup</a>，<a href="https://en.wikipedia.org/wiki/Linux_namespaces" target="_blank" rel="external">namespace</a>，以及 <a href="https://en.wikipedia.org/wiki/Aufs" target="_blank" rel="external">AUFS</a> 类的 <a href="https://en.wikipedia.org/wiki/Union_mount" target="_blank" rel="external">Union FS</a> 等技术，对进程进行封装隔离，属于 操作系统层面的虚拟化技术。由于隔离的进程独立于宿主和其它的隔离的进程，因此也称其为容器。</p>
 <h1 id="为什么使用docker？"><a href="#为什么使用docker？" class="headerlink" title="为什么使用docker？"></a>为什么使用docker？</h1><p>详见：<a href="https://yeasy.gitbooks.io/docker_practice/content/introduction/why.html" target="_blank" rel="external">https://yeasy.gitbooks.io/docker_practice/content/introduction/why.html</a></p>
