@@ -4,25 +4,8 @@
 
     
   <url>
-    <loc>https://zhanglibin1986.github.io/2017/09/06/Schedule/</loc>
-    <lastmod>2017-10-05T12:04:22.000Z</lastmod>
-    <data>
-        <display>
-        <title>Schedule</title>
-        <pubTime>2017-09-06T03:30:59.000Z</pubTime>
-        
-        <tag>private</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://zhanglibin1986.github.io/2017/09/06/Daily-Read/</loc>
-    <lastmod>2017-10-05T01:22:31.000Z</lastmod>
+    <lastmod>2017-10-07T00:40:55.000Z</lastmod>
     <data>
         <display>
         <title>Daily Read</title>
@@ -35,6 +18,23 @@
              
               <breadCrumb title="private" url="https://zhanglibin1986.github.io/categories/private/"/>
           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://zhanglibin1986.github.io/2017/09/06/Schedule/</loc>
+    <lastmod>2017-10-07T00:40:52.000Z</lastmod>
+    <data>
+        <display>
+        <title>Schedule</title>
+        <pubTime>2017-09-06T03:30:59.000Z</pubTime>
+        
+        <tag>private</tag>
+         
+         
+           
         </display>
     </data>
     </url>
