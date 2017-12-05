@@ -4,8 +4,79 @@
 
     
   <url>
+    <loc>https://zhanglibin1986.github.io/2017/12/04/%E9%9B%86%E6%88%90%E8%92%B2%E5%85%AC%E8%8B%B1sdk%E5%92%8Cci%E6%89%93%E5%8C%85%E7%B3%BB%E7%BB%9F%E5%AE%9E%E7%8E%B0%E5%90%88%E5%B9%B6master%E5%88%86%E6%94%AF%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85%E4%B8%8A%E4%BC%A0%E8%92%B2%E5%85%AC%E8%8B%B1app%E5%BC%80%E6%9C%BA%E6%8F%90%E9%86%92%E5%8D%87%E7%BA%A7/</loc>
+    <lastmod>2017-12-05T12:12:48.000Z</lastmod>
+    <data>
+        <display>
+        <title>集成蒲公英sdk和ci打包系统实现合并master分支自动打包上传蒲公英app开机提醒升级</title>
+        <pubTime>2017-12-04T09:47:20.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://zhanglibin1986.github.io/2017/09/06/Schedule/</loc>
+    <lastmod>2017-12-05T02:29:16.000Z</lastmod>
+    <data>
+        <display>
+        <title>Schedule</title>
+        <pubTime>2017-09-06T03:30:59.000Z</pubTime>
+        
+        <tag>private</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://zhanglibin1986.github.io/2017/11/29/git%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2017-12-04T09:31:19.000Z</lastmod>
+    <data>
+        <display>
+        <title>git学习总结</title>
+        <pubTime>2017-11-29T03:55:10.000Z</pubTime>
+        
+        <tag>技术</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://zhanglibin1986.github.io/2017/09/26/Jenkins%E5%AE%9E%E7%8E%B0ci%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2017-12-01T08:16:06.000Z</lastmod>
+    <data>
+        <display>
+        <title>Jenkins实现Android自动打包总结</title>
+        <pubTime>2017-09-26T11:32:21.000Z</pubTime>
+        
+        <tag>Jenkins</tag>
+         
+        <tag>Android</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="https://zhanglibin1986.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://zhanglibin1986.github.io/2017/09/06/Daily-Read/</loc>
-    <lastmod>2017-11-14T03:29:52.000Z</lastmod>
+    <lastmod>2017-11-20T02:34:01.000Z</lastmod>
     <data>
         <display>
         <title>Daily Read</title>
@@ -37,45 +108,6 @@
            
              
               <breadCrumb title="读书" url="https://zhanglibin1986.github.io/categories/%E8%AF%BB%E4%B9%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://zhanglibin1986.github.io/2017/09/06/Schedule/</loc>
-    <lastmod>2017-11-13T02:40:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>Schedule</title>
-        <pubTime>2017-09-06T03:30:59.000Z</pubTime>
-        
-        <tag>private</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://zhanglibin1986.github.io/2017/09/26/Jenkins%E5%AE%9E%E7%8E%B0ci%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2017-11-08T02:42:15.000Z</lastmod>
-    <data>
-        <display>
-        <title>Jenkins实现Android自动打包总结</title>
-        <pubTime>2017-09-26T11:32:21.000Z</pubTime>
-        
-        <tag>Jenkins</tag>
-         
-        <tag>Android</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术" url="https://zhanglibin1986.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
           
         </display>
     </data>
@@ -183,23 +215,6 @@
 
     
   <url>
-    <loc>https://zhanglibin1986.github.io/2017/09/05/%E5%BC%80%E7%AF%87/</loc>
-    <lastmod>2017-09-19T07:43:33.000Z</lastmod>
-    <data>
-        <display>
-        <title>开篇</title>
-        <pubTime>2017-09-05T12:17:53.000Z</pubTime>
-        
-        <tag>开篇</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://zhanglibin1986.github.io/2017/09/13/%E6%88%91%E7%9A%84%E4%B9%A6%E5%8D%95/</loc>
     <lastmod>2017-09-19T07:43:33.000Z</lastmod>
     <data>
@@ -214,6 +229,23 @@
              
               <breadCrumb title="读书" url="https://zhanglibin1986.github.io/categories/%E8%AF%BB%E4%B9%A6/"/>
           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://zhanglibin1986.github.io/2017/09/05/%E5%BC%80%E7%AF%87/</loc>
+    <lastmod>2017-09-19T07:43:33.000Z</lastmod>
+    <data>
+        <display>
+        <title>开篇</title>
+        <pubTime>2017-09-05T12:17:53.000Z</pubTime>
+        
+        <tag>开篇</tag>
+         
+         
+           
         </display>
     </data>
     </url>
