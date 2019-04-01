@@ -3692,6 +3692,13 @@ Out[14]: (1, 4, (2, 3))
         9. uniq 报道或忽略重复行
             1. 删除重复行 ls /bin /usr/bin | sort | uniq | less
             2. 查看重复的数据列表 ls /bin /usr/bin | sort | uniq -d | less
+            3. ubuntu@ip-172-31-27-17:~/test$ cat test1.txt | uniq -c
+                  1 second
+                  1 4
+                  1 5
+               9004 ls: cannot access bcd: No such file or directory
+                  1 last
+              显示行的内容及行数
         10. wc
             1. wc file
                 ubuntu@ip-172-31-27-17:~/test$ wc /etc/bash.bashrc
@@ -3722,7 +3729,6 @@ Out[14]: (1, 4, (2, 3))
     $ echo $USER
     zhanglibin
     8. 查看所有的系统变量：
-
     $ printenv 
     TERM_SESSION_ID=w2t0p0:21EFA1D2-4D01-47A2-A87C-E2B2D2150266
     SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.orxNVQSNkY/Listeners
@@ -3743,6 +3749,7 @@ Out[14]: (1, 4, (2, 3))
     USER=zhanglibin
     XPC_SERVICE_NAME=0
     LOGNAME=zhanglibin
+
     __CF_USER_TEXT_ENCODING=0x0:25:52
     ITERM_SESSION_ID=w2t0p0:21EFA1D2-4D01-47A2-A87C-E2B2D2150266
     SHLVL=1
@@ -3760,23 +3767,151 @@ Out[14]: (1, 4, (2, 3))
     _=/usr/bin/printenv&quot; 
 
    9. 命令替换 把一个命令输出作为一个展开模式来使用。
-   $ file $(ls)
-    1.log:               ASCII text
-    cat.log:             ASCII text
-    dir1:                directory
-    dir2:                directory
-    dir3:                directory
-    less.log:            empty
-    stderror.log:        ASCII text
-    stdout.log:          ASCII text
-    stdout_stderror.log: empty
-    test.txt:            empty
-    test1.txt:           empty
 
-    $ ll $(which cp)
-    -rwxr-xr-x  1 root  wheel    28K May 30  2018 /bin/cp
-    10. 
-</code></pre>
+       $ file $(ls)
+        1.log:               ASCII text
+        cat.log:             ASCII text
+        dir1:                directory
+        dir2:                directory
+        dir3:                directory
+        less.log:            empty
+        stderror.log:        ASCII text
+        stdout.log:          ASCII text
+        stdout_stderror.log: empty
+        test.txt:            empty
+        test1.txt:           empty
+        $ ll $(which cp)
+        -rwxr-xr-x  1 root  wheel    28K May 30  2018 /bin/cp
+</code></pre><h1 id="2019年03月22日10-50-28"><a href="#2019年03月22日10-50-28" class="headerlink" title="2019年03月22日10:50:28"></a>2019年03月22日10:50:28</h1><p>keep，之后玩pad游戏到2点多，早上地铁时间40分钟也完全浪费。今晚一定12点前睡觉。</p>
+<h2 id="TODO-8"><a href="#TODO-8" class="headerlink" title="TODO"></a>TODO</h2><ol>
+<li>qa 自动调价bug</li>
+<li>提供Airbnb账号token接口</li>
+<li>快乐的命令行</li>
+</ol>
+<h2 id="DONE-8"><a href="#DONE-8" class="headerlink" title="DONE"></a>DONE</h2><ol>
+<li>qa自动调价 10:55 ~ 11:15</li>
+<li>提供Airbnb账号 11:20 ~ 11:50</li>
+<li>洪亮bug Airbnb房源今天不可订原因调查，线上QA均有。11:50 ~ 12:35</li>
+<li>导入已有Airbnb账号到数据库中并提供接口(预计1h)(1) 14:10 ~ </li>
+<li>洪亮沟通qa bug，结论不是bug。14:22 ~ 14:31</li>
+<li>导入已有Airbnb账号到数据库中并提供接口(预计1h)(2) 14:32 ~ 14:40</li>
+<li>洪亮沟通日历逻辑 14:40 ~ 14:48</li>
+<li>导入已有Airbnb账号到数据库中 (预计1h)(3) 14:48 ~ 16:55</li>
+<li>放风 17:00 ~ 17:20</li>
+<li><p>Airbnb账号管理写文档,添加接口认证 17:20 ~ 18:05</p>
+</li>
+<li><p>快乐的命令行 18:10 ~ 18:20</p>
+</li>
+<li>Airbnb账号管理定期检查账号登录状态 18:20 ~ 19:00</li>
+</ol>
+<h1 id="2019年03月23日11-54-25"><a href="#2019年03月23日11-54-25" class="headerlink" title="2019年03月23日11:54:25"></a>2019年03月23日11:54:25</h1><p>昨晚本来打算12点前睡的,结果后来又看了个电影看到了1点多。</p>
+<h2 id="TODO-9"><a href="#TODO-9" class="headerlink" title="TODO"></a>TODO</h2><h2 id="DONE-9"><a href="#DONE-9" class="headerlink" title="DONE"></a>DONE</h2><ol>
+<li>张红兵数据导表 15:30 ~ 16:35</li>
+<li>Airbnb线上warning，429问题总结，发联查邮件</li>
+</ol>
+<h2 id="总结-21"><a href="#总结-21" class="headerlink" title="总结"></a>总结</h2><h1 id="2019年03月25日11-54-25"><a href="#2019年03月25日11-54-25" class="headerlink" title="2019年03月25日11:54:25"></a>2019年03月25日11:54:25</h1><p>昨天带熙熙去回龙园去划船了，这是熙熙第一次坐船。昨天因为父亲捡废品和父亲小吵了一架，后来想想，有点不应该。回去得和他们好好谈谈。</p>
+<h2 id="TODO-10"><a href="#TODO-10" class="headerlink" title="TODO"></a>TODO</h2><ol>
+<li>上线导表需求</li>
+<li>Airbnb warning info 问题调查总结</li>
+<li>账号管理登录接口开发</li>
+</ol>
+<h2 id="DONE-10"><a href="#DONE-10" class="headerlink" title="DONE"></a>DONE</h2><ol>
+<li>计划 10:40 ~ 11:00</li>
+<li>找一个在手机上快速记笔记的工具 11:00 ~ 11:35</li>
+<li>Airbnb warning info 问题调查总结 11:35 ~ 12:20</li>
+<li>吃饭 12:20 ~ 13:00</li>
+<li>娱乐 13:00 ~ 13:50</li>
+<li>睡觉 13:50 ~ 14:10</li>
+<li>线上 bug &amp; 上线导表需求到develop 14:10 ~ 14:30</li>
+<li>自动调价收不到邮件, 自动调价添加失败重试 14:30 ~ 16:05</li>
+<li>曹赛线上订单断开直连原因调查(1) 16:05 ~ 16:22</li>
+<li>志龙，洪亮开会 16:25 ~ 17:40</li>
+<li>总结自动调价延期原因 17:45 ~ 18:10</li>
+<li>曹赛线上订单断开直连原因调查(2) 18:15 ~ 18:26</li>
+<li>洪亮bug 处理 18:26 ~ 18:33</li>
+<li>晓雪线上问题绑定失败 18:33 ~ 18:45</li>
+<li>吃饭 18:45 ~ 19:35</li>
+<li>token失效问题, 账号管理验证token定时任务 19:35 ~ 20:30<br>下班</li>
+</ol>
+<h2 id="总结-22"><a href="#总结-22" class="headerlink" title="总结"></a>总结</h2><ol>
+<li>done-2 搜罗到的工具有：印象笔记（太重了）, oneNote, bear[<a href="https://bear.app/cn/" target="_blank" rel="external">https://bear.app/cn/</a>] note, (Ulysse)[<a href="https://sspai.com/tag/Ulysses" target="_blank" rel="external">https://sspai.com/tag/Ulysses</a>], Simplenote, Dynalist, notion<br> 手机上安装了讯飞输入法，初测挺好用。</li>
+</ol>
+<h1 id="2019年03月26日-星期二"><a href="#2019年03月26日-星期二" class="headerlink" title="2019年03月26日 星期二"></a>2019年03月26日 星期二</h1><p>昨晚安装了一个书架， 媳妇发烧了，闺女也有点发烧。</p>
+<h2 id="TODO-11"><a href="#TODO-11" class="headerlink" title="TODO"></a>TODO</h2><h2 id="DONE-11"><a href="#DONE-11" class="headerlink" title="DONE"></a>DONE</h2><ol>
+<li>自动调价bug celery进程没有重启 11:10 ~ 12:09</li>
+<li>断开直连原因调查 12:08 ~ 12:35</li>
+<li>断开直连原因调查，查明原因 13:40 ~ 16:00 </li>
+<li>解决修改订单断开直连的bug 16:00 ~ 16:20</li>
+<li>线上渠道价格搜索框联想列表bug 16:20 ~ 17:25</li>
+<li>Airbnb warning处理 18:00 ~ 18:10</li>
+<li>绑定bug 18:10 ~ 18:30</li>
+<li>绑定bug 19:35 ~ 20:45</li>
+<li>线上低价预定问题 23:18: ~ 24:50</li>
+</ol>
+<h2 id="总结-23"><a href="#总结-23" class="headerlink" title="总结"></a>总结</h2><h1 id="2019年03月27日-星期三"><a href="#2019年03月27日-星期三" class="headerlink" title="2019年03月27日 星期三"></a>2019年03月27日 星期三</h1><h2 id="TODO-12"><a href="#TODO-12" class="headerlink" title="TODO"></a>TODO</h2><h2 id="DONE-12"><a href="#DONE-12" class="headerlink" title="DONE"></a>DONE</h2><ol>
+<li>线上低价预定查询 10:40 ~ 11:10</li>
+<li>添加改价记录日志 11:10 ~ 12:00</li>
+<li>绑定房源出错 12:50 ~ 13:16</li>
+<li>改价中没有显示直连的榛果平台, 处理登录榛果账号，部分房源没有拉取下来价格 13:16 ~ 16:30 </li>
+<li>散步 16:30 ~ 17:00</li>
+<li>自营转托管bug fix 17:00 ~ 20:45</li>
+</ol>
+<h1 id="2019年03月28日-星期四"><a href="#2019年03月28日-星期四" class="headerlink" title="2019年03月28日 星期四"></a>2019年03月28日 星期四</h1><p>昨天二宝也开始发高烧，最高39.8°，大宝发烧也还在继续，昨天下午老婆带大宝去了医院，给俩宝贝都开了药。媳妇感冒也难受的要死，脾气很不好。</p>
+<h2 id="TODO-13"><a href="#TODO-13" class="headerlink" title="TODO"></a>TODO</h2><ol>
+<li>上线</li>
+<li>开始账号管理</li>
+<li>自测h渠道改价日志</li>
+<li>去掉sentry的info和warning日志</li>
+<li>自动调价房源id配置</li>
+</ol>
+<h2 id="DONE-13"><a href="#DONE-13" class="headerlink" title="DONE"></a>DONE</h2><ol>
+<li>计划 10:35 ~ 10:45</li>
+<li>自测榛果拉取价格 上线 榛果bugfix 渠道改价日志  10:45 ~ 12:10 12:50 ~ 14:10</li>
+<li>自动调价房源id配置 14:25 ~ 15:10</li>
+<li>去掉sentry的info和warning日志 15:10 ~ 15:30</li>
+<li>开始账号管理 读需求 15:40 ~ 16:25</li>
+<li>外出 16:30 ~ 17:00</li>
+<li>威然紧急需求，屏蔽城宿公众号中民宿投资的菜单选项 17:00 ~ 17:20</li>
+<li>线上bug调查。刷单变正常订单，不能屏蔽 17:20 ~ 17:50</li>
+<li>张红兵手动导表 17:50 ~ 17:55</li>
+<li>上线自动调价 18:05 ~ 18:30</li>
+<li>给曹赛导表 19:20 ~ 19:50</li>
+<li></li>
+<li>定添加账号接口,写文档 </li>
+</ol>
+<h2 id="总结-24"><a href="#总结-24" class="headerlink" title="总结"></a>总结</h2><p>done-9: Airbnb页面没有更新的问题,甩锅成功.</p>
+<h1 id="2019年03月29日-星期五"><a href="#2019年03月29日-星期五" class="headerlink" title="2019年03月29日 星期五"></a>2019年03月29日 星期五</h1><h2 id="TODO-14"><a href="#TODO-14" class="headerlink" title="TODO"></a>TODO</h2><h2 id="DONE-14"><a href="#DONE-14" class="headerlink" title="DONE"></a>DONE</h2><ol>
+<li>sed命令 10:45 ~ 11:20</li>
+<li>账号管理早会 11:20 ~ 11:30 </li>
+<li>帮冀伟一起分析删日志文件的方法 11:30 ~ 12:10</li>
+<li>处理线上sentry bug 14:30 ~ 20:25</li>
+</ol>
+<h2 id="总结-25"><a href="#总结-25" class="headerlink" title="总结"></a>总结</h2><h2 id="Note-3"><a href="#Note-3" class="headerlink" title="Note"></a>Note</h2><pre><code>1. sed -i &apos;1,1000d&apos; file  删除文件的前1 ~ 1000行(-i 在原文件删除）
+    1. ll | sed &apos;s/t/a/g&apos;  将ll命令输出的文本中的t全部替换为a
+    2. sed &apos;100, 200s/t/a/g&apos; file 把文件中100 ~ 200行中的t替换为a
+</code></pre><h1 id="2019年03月31日-星期日"><a href="#2019年03月31日-星期日" class="headerlink" title="2019年03月31日 星期日"></a>2019年03月31日 星期日</h1><pre><code>这两天，两个宝贝发烧愈发严重了，今天上午又带两个孩子去了一趟医院，大宝被诊断为细菌+病毒交叉感染，二宝为病毒感染，两个宝贝动不动就烧到39°多，真是愁人。大宝最烦人的是，睡觉的时候老是喊肚子疼要不就是屁股疼，只能抱着揽着睡觉，把大人累坏。昨天几乎一宿没睡好，孩子大人都是。
+</code></pre><h2 id="DONE-15"><a href="#DONE-15" class="headerlink" title="DONE"></a>DONE</h2><ol>
+<li>账号登录接口 16:50 ~ 18:00</li>
+</ol>
+<h1 id="2019年04月01日-星期一"><a href="#2019年04月01日-星期一" class="headerlink" title="2019年04月01日 星期一"></a>2019年04月01日 星期一</h1><p>孩子们今天好多了</p>
+<h2 id="DONE-16"><a href="#DONE-16" class="headerlink" title="DONE"></a>DONE</h2><ol>
+<li>计划 10:40 ~ 10:55</li>
+<li>早会11:00 ~ 11:05</li>
+<li>账号管理需求 11:05 ~ 11:45<ol>
+<li>去掉place字段 0.5h</li>
+<li>部署至dev 0.5h</li>
+</ol>
+</li>
+<li>帮产品查询自动调价改价日志 11:45 ~ 12:15</li>
+<li>线上榛果价格房态重复拉取的bug 13:00 ~ 13:15</li>
+<li>线上榛果价格房态拉取重复问题 解决 加锁 14:10 ~ 15:50</li>
+<li>账号管理需求 16:00 ~ 17:25</li>
+<li>散步 17:25 ~ 17:55</li>
+<li>账号管理需求 17:55 ~ 20:10</li>
+<li>晓雪线上天津房源信息中没有绑定渠道的信息 20:10 ~ 20:40</li>
+<li>账号管理需求 20:40 ~ 21:00</li>
+</ol>
+<h2 id="TODO-15"><a href="#TODO-15" class="headerlink" title="TODO"></a>TODO</h2>
           
         
       
